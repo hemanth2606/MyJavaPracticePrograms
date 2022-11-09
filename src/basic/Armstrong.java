@@ -16,7 +16,6 @@ public class Armstrong {
             }
         }
     }
-
     private static boolean isArmStrong(long n) {
         long sum = 0;
         long o = n;

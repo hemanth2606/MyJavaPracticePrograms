@@ -1,5 +1,7 @@
 package dataStructure.search;
 
+import java.util.ArrayList;
+
 public class BinarySearch {
     public static void main(String[] args)
     {
@@ -8,6 +10,18 @@ public class BinarySearch {
         int result2 = binary_search(arr,10);
         System.out.println(result2);
         System.out.println(result);
+        ArrayList<Integer>  l = new ArrayList<>();
+        ArrayList<Integer>  l1 = new ArrayList<>();
+        l.add(32);
+        l.add(22);
+        l.add(11);
+        l.add(32);
+        l.add(22);
+        l.add(11);
+        //l1.addAll(l.subList(0,3));
+        //System.out.println(l1.);
+        System.out.println(l.get(5));
+
 
     }
     static int binary_search(int[] arr,int target){

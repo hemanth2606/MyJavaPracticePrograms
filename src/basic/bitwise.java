@@ -4,22 +4,23 @@ import java.util.Arrays;
 
 public class bitwise {
     public static void main(String[] args) {
-        int n  = 13;
-        System.out.println(isOdd(89));
-        int[] arr = {2,2,4,4,3,3,5,9};
-        System.out.println(singleDigit(arr));
-         System.out.println(3&-3);
-        System.out.println(magicNo(4 ,2));
-        System.out.println(NoOfDigits(12345,10));
-        System.out.println(sumOfPascalsTriangle(5));
-        System.out.println(PowOfTwo(4));
-        System.out.println(noOfPow(2,2));
-        System.out.println(noOfSetBit(45));
-        System.out.println(Integer.toBinaryString(10));
-        System.out.println(xor(8));
+//        int n  = 13;
+//        System.out.println(isOdd(89));
+//        int[] arr = {2,2,4,4,3,3,5,9};
+//        System.out.println(singleDigit(arr));
+//         System.out.println(3&-3);
+//        System.out.println(magicNo(4 ,2));
+//        System.out.println(NoOfDigits(12345,10));
+//        System.out.println(sumOfPascalsTriangle(5));
+//        System.out.println(PowOfTwo(4));
+//        System.out.println(noOfPow(2,2));
+//        System.out.println(noOfSetBit(45));
+//        System.out.println(Integer.toBinaryString(10));
+        System.out.println(xor(6));
         System.out.println(rangeXOR(2,5));
-        int[][] arr1 = {{1,0,0},{0,0,1},{0,1,0}};
-        System.out.println(Arrays.toString(flipAndInvertImage(arr1)));
+        System.out.println(1%4);
+//        int[][] arr1 = {{1,0,0},{0,0,1},{0,1,0}};
+//        System.out.println(Arrays.toString(flipAndInvertImage(arr1)));
     }
 
     private static int singleDigit(int[] arr) {
@@ -124,7 +125,7 @@ public class bitwise {
     static  int[][] flipAndInvertImage(int[][] image)
     {
         for (int[] row: image) {
-            for (int i = 0; i < image[0].length; i++) {
+            for (int i = 0; i < (image[0].length+1)/2; i++) {
                 int temp = row[i]^1;
                 row[i] = row[image[0].length-i-1]^1;
                 row[image[0].length-i-1]= temp;

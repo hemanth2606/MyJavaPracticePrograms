@@ -2,6 +2,7 @@ package basic;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class array {
@@ -25,7 +26,7 @@ public class array {
             System.out.println(Arrays.toString(ints));
         }
 //        int[] arr = {1,2,3,4,5};
-
+//
 //        swap(arr,3,4);
 //        System.out.println(Arrays.toString(arr));
 //        reverse(arr);

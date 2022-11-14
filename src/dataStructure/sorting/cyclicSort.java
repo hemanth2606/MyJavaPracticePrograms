@@ -9,8 +9,8 @@ public class cyclicSort {
         int[] arr = {3,4,2,1,5};
         cyclic(arr);
         System.out.println(Arrays.toString(arr));
-//        int[] arr1 = {3,2,0};
-//        int ms = missingNo(arr1);
+       int[] arr1 = {3,2,0};
+        int ms = missingNo(arr1);
 //        int[] arr2 = {4,3,2,7,8,2,3,1,11,10,11};
 //        int[] arr3 = {4,3,2,7,8,2,3};
 //        int[] arr4 = {0,0,1,1,2,2,3,4,5};

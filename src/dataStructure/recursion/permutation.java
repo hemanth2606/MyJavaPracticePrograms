@@ -6,7 +6,7 @@ import java.util.List;
 public class permutation {
     public static void main(String[] args) {
         String s1 = "abc";
-        ArrayList<String> ans  = returnSubSetCom("","123");
+        ArrayList<String> ans  = returnSubSetCom("","12");
         System.out.println(ans);
         System.out.println(numberCombination("12"));
         System.out.println(dices(4));

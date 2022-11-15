@@ -10,23 +10,16 @@ public class PlusOne {
         System.out.println(Arrays.toString(plusOne(arr)));
     }
     public static int[] plusOne(int[] digits) {
-        long ans = 0;
-        for (int i = 0; i < digits.length; i++) {
-            ans = ans * 10 + digits[i];
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
         }
-        System.out.println(ans);
-        ans+=1;
-        System.out.println(ans);
-        int[] new_arr = new int[(int)Math.log10(ans)+1];
-        long temp = ans;
-        int count =new_arr.length-1;
-        while (temp != 0)
-        {
-            long rem = temp%10;
-            new_arr[count] =(int)rem;
-            temp/=10;
-            count--;
-        }
-        return new_arr;
+
+        digits = new int[digits.length + 1];
+        digits[0] = 1;
+        return digits;
     }
 }

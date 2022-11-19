@@ -1,17 +1,25 @@
 package dataStructure;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class slidingWindow {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6};
         int k = 3;
-        String s ="abcabcbbbefghefgh";
+        String s ="abcabbbbcefghijkefgh";
         System.out.println(SumOfSubArray(arr,k));
         System.out.println(lengthOfLongestSubstring(s));
+        HashSet<Integer> m = new HashSet<>();
+        m.add(34);
+        m.add(34);
+        m.add(44);
+        System.out.println(m);
+        HashMap<String,Integer> m1 = new HashMap<>();
+        m1.put("1",1);
+        m1.put("2",2);
+        m1.put("2",3);
+        m1.put("3",m1.getOrDefault("3",2)+1);
+        System.out.println(m1);
     }
 
     private static ArrayList<Integer> SumOfSubArray(int[] arr,int key) {

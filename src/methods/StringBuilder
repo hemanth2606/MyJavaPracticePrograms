@@ -1,0 +1,13 @@
+//String builder init function
+StringBuilder str  = new StringBuilder();
+str.append(str,char,direct int,float,double);
+str.append(char[] ch,int offset,int length);
+str.replace(int start,int end ,String str);
+str.insert(int offset ,(str,char,direct int,float,double));
+str.compareTo(anther StringBuilder type str);
+str.delete(int start, int end);
+str.deleteCharAt(int index);
+str.charAt(int index);
+str.reverse();// return null
+str.indexAt(String str);//return int
+str.isEmpty(); // returns bool

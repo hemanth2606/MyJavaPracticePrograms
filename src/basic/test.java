@@ -1,22 +1,29 @@
 package basic;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-        List<String> strArr = new ArrayList<>();
-        strArr.add("aab");
-        strArr.add("a");
-        strArr.add("bcb");
-        strArr.add("awe");
-        strArr.add("bbbbbu");
-        List<String> query = new ArrayList<>();
-        query.add("2-3");
-        query.add("4-5");
-        System.out.println(hasVowels(strArr,query));
-        //System.out.println('1');
+//        List<String> strArr = new ArrayList<>();
+//        strArr.add("aab");
+//        strArr.add("a");
+//        strArr.add("bcb");
+//        strArr.add("awe");
+//        strArr.add("bbbbbu");
+//        List<String> query = new ArrayList<>();
+//        query.add("2-3");
+//        query.add("4-5");
+//        int[] a = {1,2,4,5,2};
+//        int[] b =a;
+//        b[0]=5;
+//        String[] str = {"abcd","efgh","ijkl"};
+//        int[] arr = {1,2,3,4,5};
+//        System.out.println(Arrays.stream(arr).max());
+//        System.out.println(Arrays.toString(a));
+//        System.out.println(hasVowels(strArr,query));
+//        //System.out.println('1');
+        String s = "HemanthKS";
+        System.out.println(s.startsWith("man",2));
 
 
     }

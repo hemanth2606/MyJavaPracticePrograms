@@ -1,11 +1,10 @@
 package leetCode.medium;
 
 import java.math.BigInteger;
-import java.math.*;
 
 public class AdditiveNumber {
     public static void main(String[] args) {
-        System.out.println(isAdditiveNumber("19910000199"));
+        System.out.println(isAdditiveNumber("0000000"));
 
     }
     public static boolean isAdditiveNumber(String num) {
@@ -27,6 +26,7 @@ public class AdditiveNumber {
     x2 = x2.add(x1);
     x1 = x2.subtract(x1);
     String sum = x2.toString();
+    System.out.println(x1+" "+x2);
     return num.startsWith(sum, start) && isValid(x1, x2, start + sum.length(), num);
 }
 

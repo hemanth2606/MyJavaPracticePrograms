@@ -6,8 +6,8 @@ import java.util.Map;
 
 public class twoSums {
     public static void main(String[] args) {
-        int[] arr = {2,4,3,11,15};
-        int target = 9;
+        int[] arr = {2,3,1,11,15};
+        int target = 4;
         int[] ans = twoSum(arr,target);
         System.out.println(Arrays.toString(ans));
         System.out.println(Arrays.toString(findTwoSum(arr,target)));

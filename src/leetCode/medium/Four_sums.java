@@ -14,6 +14,8 @@ public class Four_sums {
     }
     public static List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> list = new ArrayList<>();
+        Set<Integer> set = new HashSet<>();
+        Iterator<Integer> it = set.iterator();
         for (int i = 0; i <nums.length; i++) {
                 for (int j = 0; j < i; j++) {
                     for (int k = 0; k < j; k++) {
@@ -24,15 +26,9 @@ public class Four_sums {
                                     continue;}
                                 list.add(Arrays.asList(nums[i],nums[j],nums[k],nums[l]));
                             }
-
-
                         }
-
-
                     }
-
                 }
-
             }
         return list;
     }

@@ -6,16 +6,16 @@ import java.util.List;
 
 public class subSet {
     public static void main(String[] args) {
-        String s0 = "abc";
-        skipString("",s0);
-        System.out.println(skipString1(s0));
-        System.out.println(skipApple("Appleisgoodforhealth"));
-        System.out.println(skipAppNotApple("appleisappgoodforhealth"));
-        returnSubSet("",s0);
-        System.out.println(returnSubSet1("",s0));
-        int[] num = {1,2,2};
+//        String s0 = "abc";
+//        skipString("",s0);
+//        System.out.println(skipString1(s0));
+//        System.out.println(skipApple("Appleisgoodforhealth"));
+//        System.out.println(skipAppNotApple("appleisappgoodforhealth"));
+//        returnSubSet("",s0);
+//        System.out.println(returnSubSet1("",s0));
+        int[] num = {1,2,3};
         System.out.println(subsetInt(num));
-        System.out.println(subsetIntDuplicate(num));
+//        System.out.println(subsetIntDuplicate(num));
 
     }
 
@@ -93,11 +93,11 @@ public class subSet {
             System.out.println(size);
             for (int i = 0; i < size; i++) {
                 List<Integer> internal = new ArrayList<>(outer.get(i));
+                System.out.println(outer.get(i)+" "+i);
                 internal.add(num);
                 outer.add(internal);
             }
         }
-        outer.remove(0);
         return outer;
 
     }

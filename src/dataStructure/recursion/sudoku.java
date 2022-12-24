@@ -1,5 +1,8 @@
 package dataStructure.recursion;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class sudoku {
     public static void main(String[] args) {
         int[][] board = new int[][]{
@@ -70,12 +73,13 @@ public class sudoku {
 
     private static void display(int[][] board) {
         for (int[] row: board) {
-            for (int num: row) {
-                System.out.print(num +" ");
+            for (int num : row) {
+                System.out.print(num + "");
             }
             System.out.println();
 
         }
+        System.out.println(Arrays.deepToString(board));
     }
 
     static boolean isSafe(int[][] board, int row , int col,int num)

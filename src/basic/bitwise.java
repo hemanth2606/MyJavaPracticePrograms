@@ -6,8 +6,8 @@ public class bitwise {
     public static void main(String[] args) {
 //        int n  = 13;
 //        System.out.println(isOdd(89));
-//        int[] arr = {2,2,4,4,3,3,5,9};
-//        System.out.println(singleDigit(arr));
+        int[] arr = {1};
+        System.out.println(singleDigit(arr));
 //         System.out.println(3&-3);
 //        System.out.println(magicNo(4 ,2));
 //        System.out.println(NoOfDigits(12345,10));
